@@ -34,19 +34,22 @@ html {
 	padding-right: 35px;
 }
 
+
+/*  -------  Header  ------ */
+
 .header {
 	height: 800px;
 	background: url("../img/header_bg.jpg") top center no-repeat;
 
 	.top {
-		padding: 13px;
+		padding: 13px 0;
 		margin-bottom: 59px;
 
 		.header-logo {
 			float: left;
 			width: 144px;
 			overflow: hidden;
-			margin-left: 25px;
+			margin-left: 35px;
 			margin-right: 225px;
 		}
 
@@ -323,8 +326,88 @@ html {
 /*  -------  Block 03 ------ */
 
 .block03 {
+	color: #fff;
 	height: 612px;
+	padding-top: 165px;
 	background: url("../img/b03_bg.jpg") top center no-repeat;
+
+	.form-quest {
+		padding-top: 25px;
+		margin-left: 415px;
+	}
+
+	.form-text {
+		float: left;
+		width: 360px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		.form-title {
+			font-size: 50px;
+			line-height: 50px;
+			position: relative;
+			margin-bottom: 10px;
+
+			&:before {
+				bottom: 15px;
+				right: 45px;
+				width: 26px;
+				height: 19px;
+				content: " ";
+				position: absolute;
+				background: url("../img/icon-arrow-down.png") 0 0 no-repeat;
+			}
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 28px;
+
+		}
+	}
+
+	.form-content {
+		float: right;
+		width: 395px;
+	}
+
+	.form-label {
+		margin: 0;
+		color: #fff;
+		width: 100%;
+		height: 40px;
+		display: block;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		padding: 10px 0 10px 30px;
+
+		&.label-name {
+			background: url("../img/icon-user.png") 0 50% no-repeat;
+		}
+
+		&.label-phone {
+			background: url("../img/icon-phone.png") 0 50% no-repeat;
+		}
+
+	}
+
+	.form-control {
+		color: #fff;
+		width: 100%;
+		height: 40px;
+		outline: none;
+		display: block;
+		font-size: 22px;
+		line-height: 30px;
+		padding: 4px 15px;
+		position: relative;
+		text-align: center;
+		border: 1px solid #a9abad;
+		background: rgba(255,255,255, 0.2);
+
+		.placeholder(#fff);
+	}
 }
 
 
@@ -656,7 +739,7 @@ html {
 	}
 }
 
-/* Form & button
+/* Button
    ========================= */
 
 .btn-top {
@@ -722,6 +805,49 @@ html {
 
 	&:hover {
 		background: #f5df12;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.btn-border {
+	border: none;
+	outline: none;
+	color: #322f2f;
+	font-size: 32px;
+	cursor: pointer;
+	font-weight: 600;
+	margin-top: 30px;
+	line-height: 40px;
+	padding: 30px 80px;
+	position: relative;
+	background: #e4cf0c;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:before {
+		top: -15px;
+		left: -15px;
+		right: 15px;
+		bottom: 15px;
+		content: " ";
+		position: absolute;
+		border: 7px solid #fff;
+		background: transparent;
+		text-transform: uppercase;
+		.transition(.3s);
+	}
+
+	&:hover {
+		&:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
 	}
 
 	&:active {

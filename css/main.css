@@ -96,19 +96,20 @@ html {
   padding-left: 35px;
   padding-right: 35px;
 }
+/*  -------  Header  ------ */
 .header {
   height: 800px;
   background: url("../img/header_bg.jpg") top center no-repeat;
 }
 .header .top {
-  padding: 13px;
+  padding: 13px 0;
   margin-bottom: 59px;
 }
 .header .top .header-logo {
   float: left;
   width: 144px;
   overflow: hidden;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-right: 225px;
 }
 .header .top .header-phone {
@@ -355,8 +356,84 @@ html {
 }
 /*  -------  Block 03 ------ */
 .block03 {
+  color: #fff;
   height: 612px;
+  padding-top: 165px;
   background: url("../img/b03_bg.jpg") top center no-repeat;
+}
+.block03 .form-quest {
+  padding-top: 25px;
+  margin-left: 415px;
+}
+.block03 .form-text {
+  float: left;
+  width: 360px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.block03 .form-text .form-title {
+  font-size: 50px;
+  line-height: 50px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.block03 .form-text .form-title:before {
+  bottom: 15px;
+  right: 45px;
+  width: 26px;
+  height: 19px;
+  content: " ";
+  position: absolute;
+  background: url("../img/icon-arrow-down.png") 0 0 no-repeat;
+}
+.block03 .form-text p {
+  font-size: 20px;
+  line-height: 28px;
+}
+.block03 .form-content {
+  float: right;
+  width: 395px;
+}
+.block03 .form-label {
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px 0 10px 30px;
+}
+.block03 .form-label.label-name {
+  background: url("../img/icon-user.png") 0 50% no-repeat;
+}
+.block03 .form-label.label-phone {
+  background: url("../img/icon-phone.png") 0 50% no-repeat;
+}
+.block03 .form-control {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 4px 15px;
+  position: relative;
+  text-align: center;
+  border: 1px solid #a9abad;
+  background: rgba(255, 255, 255, 0.2);
+}
+.block03 .form-control::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.block03 .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+.block03 .form-control::-webkit-input-placeholder {
+  color: #ffffff;
 }
 /*  -------  Block 04 ------ */
 .block04 {
@@ -642,7 +719,7 @@ html {
   position: relative;
   background: url("../img/service-list.png") 0 8px no-repeat;
 }
-/* Form & button
+/* Button
    ========================= */
 .btn-top {
   top: 0;
@@ -704,6 +781,46 @@ html {
   background: #f5df12;
 }
 .btn-callback:active {
+  top: 1px;
+}
+.btn-border {
+  border: none;
+  outline: none;
+  color: #322f2f;
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 40px;
+  padding: 30px 80px;
+  position: relative;
+  background: #e4cf0c;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-border:before {
+  top: -15px;
+  left: -15px;
+  right: 15px;
+  bottom: 15px;
+  content: " ";
+  position: absolute;
+  border: 7px solid #fff;
+  background: transparent;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-border:hover:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.btn-border:active {
   top: 1px;
 }
 /* Typography
