@@ -44,10 +44,10 @@
                     <form class="form">
                         <div class="form-title">оставьте заявку</div>
                         <div class="form-group">
-                            <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя">
+                            <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон">
+                            <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
                         </div>
                         <p>Менеджер свяжется с вами в близжайшее время.</p>
                         <span class="yellow-arrow-right"></span>
@@ -104,8 +104,8 @@
 
         <section class="block02">
             <div class="container">
-                <h2>Для чего нужна <strong>CRM-система ?</strong></h2>
-                <div class="stamp hidden-xs"></div>
+                <h2>Для чего нужна <strong>CRM<span class="hidden-xs">-система</span>?</strong></h2>
+                <div class="stamp hidden-xs scroll"></div>
                 <ul class="for-what">
                     <li>Для создания единого защищенного центра хранения и управления всей информации о вашей компании.</li>
                     <li>Для хранения и быстрого "поднятия" всей истории по каждому конкретному клиенту.</li>
@@ -131,11 +131,11 @@
                             <div class="form-content">
                                 <div class="form-group">
                                     <label class="form-label label-name" for="form-quest-name">Введите ваше имя:</label>
-                                    <input type="text" name="name" class="form-control" id="form-quest-name" placeholder="Имя">
+                                    <input type="text" name="name" class="form-control" id="form-quest-name" placeholder="Имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label label-phone" for="form-quest-phone">Введите ваш телефон:</label>
-                                    <input type="text" name="phone" class="form-control" id="form-quest-phone" placeholder="телефон">
+                                    <input type="text" name="phone" class="form-control" id="form-quest-phone" placeholder="телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
                                 </div>
                             </div>
                         </div>
@@ -164,6 +164,10 @@
         <section class="block05">
             <div class="container">
                 <ul class="clearfix">
+                    <li class="item5">
+                        <img class="img-responsive" src="img/b05_item5.jpg">
+                        <div class="text">ЧТО ДЕЛАЮТ <strong>ВАШИ СОТРУДНИКИ</strong></div>
+                    </li>
                     <li class="item1">
                         <img class="img-responsive" src="img/b05_item1.jpg" alt="">
                     </li>
@@ -176,13 +180,9 @@
                     <li class="item4">
                         <img class="img-responsive" src="img/b05_item4.jpg" alt="">
                     </li>
-                    <li class="item5">
-                        <div class="text">ЧТО ДЕЛАЮТ <strong>ВАШИ СОТРУДНИКИ</strong></div>
-                    </li>
                 </ul>
             </div>
         </section>
-
 
         <section class="block06">
             <div class="container">
@@ -228,25 +228,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center">
+                    <span class="btn-yellow">показать еще</span>
+                </div>
             </div>
         </section>
 
         <section class="block07">
             <div class="container">
-                <div class="text-center">
-                    <span class="btn-yellow">показать еще</span>
-                    <div class="callback-form" id="callback">
-                        <form class="form">
-                            <div class="form-title">Для получения <strong>БЕСПЛАТНОЙ</strong> консультации<br/>по разработке <strong>CRM</strong></div>
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон">
-                            </div>
+                <div class="callback-form" id="callback">
+                    <form class="form">
+                        <div class="form-title">Для получения <strong>БЕСПЛАТНОЙ</strong> консультации<br/>по разработке <strong>CRM</strong></div>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                        </div>
+                        <div class="text-center">
                             <button class="btn-callback"><span>ХОЧУ CRM!</span></button>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -309,6 +311,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/jquery.form-validator.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

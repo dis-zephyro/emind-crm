@@ -15,7 +15,7 @@
   }
   .header .top {
     padding: 10px 0 ;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .header .top .header-logo {
     width: 86px;
@@ -35,7 +35,7 @@
   }
   .header .crm-block {
     color: #4d515b;
-    padding: 10px;
+    padding: 15px 5px;
     margin-left: -10px;
     margin-bottom: 0;
     margin-right: -10px;
@@ -44,14 +44,14 @@
   .header .crm-block .crm-block-title {
     float: left;
     width: 100px;
-    height: 60px;
+    height: 40px;
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
   }
   .header .crm-block .crm-block-text {
     float: left;
-    width: 200px;
+    width: 210px;
     height: 40px;
     font-size: 14px;
     line-height: 20px;
@@ -113,18 +113,19 @@
   }
   .header .header-form p {
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 300;
-    margin-bottom: 0;
-    margin-top: -10px;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .header .header-form .yellow-arrow-right {
-    top: 132px;
-    right: 116px;
-    width: 19px;
-    height: 26px;
+    top: 218px;
+    right: 50%;
+    width: 17px;
+    height: 11px;
+    margin-right: -10px;
     position: absolute;
-    background: url("../img/yellow-arrow-right.png") 0 0 no-repeat;
+    background: url("../img/yellow-arrow-down.png") 0 0 no-repeat;
   }
   .header .header-form .btn-header-form {
     top: auto;
@@ -133,26 +134,408 @@
     border: none;
     outline: none;
     height: 47px;
+    display: block;
     color: #322f2f;
+    margin: 0 auto;
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    background: url("../img/btn-header-form.png") 0 0 no-repeat;
-  }
-  .header .header-form .btn-header-form:before {
-    top: 108px;
-    left: -39px;
-    width: 19px;
-    height: 26px;
-    content: " ";
-    z-index: 100;
-    position: absolute;
-    background: url("../img/yellow-arrow-right.png") 0 0 no-repeat;
+    background: url("../img/btn-header-form-xs.png") 0 0 no-repeat;
   }
   .header .header-form .btn-header-form:hover {
-    right: 37px;
+    right: auto;
+    top: 1px;
   }
   .header .header-form .btn-header-form span {
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  /*  -------  Block 01 ------ */
+  .block01 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .block01 .text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .block01 .text strong {
+    font-weight: 400;
+    display: block;
+  }
+  .block01 .crm {
+    margin-bottom: 30px;
+    background: none;
+  }
+  .block01 .crm li {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .block01 p {
+    padding: 0;
+    text-align: left;
+  }
+  /*  -------  Block 02 ------ */
+  .block02 {
+    padding-top: 25px;
+    background: #f2f2f2;
+    padding-bottom: 25px;
+  }
+  .block02 .for-what {
+    z-index: 20;
+    display: block;
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+  .block02 .for-what li {
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    padding: 23px 0 23px 55px;
+    background: url("../img/for-what-divider.png") center bottom no-repeat;
+  }
+  .block02 .for-what li:before {
+    left: 0;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    content: " ";
+    margin-top: -12px;
+    position: absolute;
+    background: url("../img/list-item-marker.png") 0 0 no-repeat;
+  }
+  /*  -------  Block 03 ------ */
+  .block03 {
+    color: #fff;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #535559;
+  }
+  .block03 .form-quest {
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .block03 .form-text {
+    float: none;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .block03 .form-text .form-title {
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .block03 .form-text .form-title:before {
+    top: 0;
+    bottom: auto;
+    right: 140px;
+    width: 20px;
+    height: 16px;
+    content: " ";
+    position: absolute;
+    background: url("../img/icon-arrow-down.png") 0 0 no-repeat;
+    background-size: contain;
+  }
+  .block03 .form-text p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .block03 .form-content {
+    float: none;
+    width: 100%;
+  }
+  .block03 .form-label {
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 5px 0 5px 30px;
+  }
+  .block03 .form-label.label-name {
+    background: url("../img/icon-user.png") 0 50% no-repeat;
+  }
+  .block03 .form-label.label-phone {
+    background: url("../img/icon-phone.png") 0 50% no-repeat;
+  }
+  .block03 .form-control {
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 4px 15px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #a9abad;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  /*  -------  Block 04 ------ */
+  .block04 .text {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .block04 .text strong {
+    font-weight: 400;
+  }
+  .block04 .who li {
+    float: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .block04 .who li.item4 {
+    border-right: none;
+    border-bottom: none;
+  }
+  /*  -------  Block 05 ------ */
+  .block05 ul {
+    height: auto;
+    position: relative;
+  }
+  .block05 ul li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .block05 ul li.item1 {
+    left: auto;
+    top: auto;
+  }
+  .block05 ul li.item2 {
+    top: auto;
+    left: auto;
+  }
+  .block05 ul li.item3 {
+    top: auto;
+    left: auto;
+  }
+  .block05 ul li.item4 {
+    right: auto;
+    top: auto;
+  }
+  .block05 ul li.item5 {
+    bottom: auto;
+    left: auto;
+    width: 100%;
+  }
+  .block05 ul li.item5 .text {
+    top: -1px;
+    color: #fff;
+    height: 80px;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
+    position: relative;
+    padding-left: 30px;
+    background: #d1b81a;
+    text-transform: uppercase;
+  }
+  .block05 ul li.item5 .text:before {
+    top: 0;
+    left: 0;
+    color: #fff;
+    height: 70px;
+    content: "?";
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+    position: absolute;
+  }
+  /*  -------  Block 06 ------ */
+  .block06 {
+    padding-top: 30px;
+  }
+  .block06 h2 {
+    margin-bottom: 40px;
+  }
+  .block06 .reply {
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    background: url("../img/horisontal-divider.png") center bottom no-repeat;
+  }
+  .block06 .reply .reply-image {
+    float: none;
+    width: 270px;
+    margin: 0 auto 20px auto;
+  }
+  .block06 .reply .reply-image img {
+    margin: 0 auto;
+  }
+  .block06 .reply .reply-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+  .block06 .reply .reply-author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .block06 .reply .reply-author:before {
+    left: 50%;
+    bottom: 0;
+    width: 90px;
+    height: 2px;
+    content: " ";
+    margin-left: -45px;
+    position: absolute;
+    background: #eede08;
+  }
+  /*  -------  Block 07 ------ */
+  .block07 {
+    height: auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #535559;
+  }
+  .block07 .callback-form {
+    width: auto;
+  }
+  .block07 .callback-form .form-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 -7px 20px -7px;
+  }
+  .block07 .callback-form .form-title strong {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .block07 .callback-form .form-group {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .block07 .callback-form .form-control {
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    position: relative;
+    padding: 5px 15px 5px 65px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .block07 .callback-form .form-control.form-name {
+    background: rgba(255, 255, 255, 0.2) url("../img/icon-user.png") 20px 50% no-repeat;
+  }
+  .block07 .callback-form .form-control.form-phone {
+    background: rgba(255, 255, 255, 0.2) url("../img/icon-phone.png") 20px 50% no-repeat;
+  }
+  /*  -------  Block 09 ------ */
+  .block08 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .block08 .service {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .block08 .service > li {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .block08 .service .service-title {
+    color: #7e9130;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .block08 .service .service-title strong {
+    font-weight: 700;
+  }
+  .block08 .service .service-title span {
+    color: #5f605a;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .block08 .service .service-title:before {
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    width: 74px;
+    content: " ";
+    margin-left: -37px;
+    position: absolute;
+    background: #a9c632;
+  }
+  /*----------------------------*/
+  .btn-border {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+    padding: 12px 45px;
+  }
+  .btn-border:before {
     display: none;
+  }
+  .btn-border:hover:before {
+    display: none;
+  }
+  .btn-border:active {
+    top: 1px;
+  }
+  .btn-callback {
+    width: 260px;
+    color: #473f3f;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 60px;
+    display: block;
+    margin: 0 auto;
+  }
+  h2 {
+    height: 48px;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 6px 5px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 5px solid #eede08;
+  }
+  h2:after {
+    width: 100%;
+    content: " ";
+    display: block;
   }
 }
